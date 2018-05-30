@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="dbTest">
+  <database-model serializer="dbm" rdbms="H2" format-version="4.9">
+    <root id="1">
+      <ServerVersion>1.4.196</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="DBTEST">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="USER"/>
+    <column id="6" parent="5" name="INT">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_5F97A720_6E51_4300_B5D7_6D9CC24C7E33)</DefaultExpression>
+    </column>
+    <column id="7" parent="5" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="8" parent="5" name="PRIMARY_KEY_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>INT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="9" parent="5" name="CONSTRAINT_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>INT</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
